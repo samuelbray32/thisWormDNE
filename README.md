@@ -8,13 +8,14 @@ We start with our video of interest. Here we see a set of videos of the stimulus
 
 ![What is this](results/uv30s_response.gif)
 
-It achieves this by first stacking adjacent frames of video to form  clips of dimension
+We then stack adjacent frames of video to form  clips of dimension
 (height, width, channels, time points).  A Variational Autoencoder (VAE) is trained to
 find a generative latent embedding of these clips in a low dimensional space (See VAE_video.ipynb).
 To work best, there should be some motif patterns contained in your video
 (eg. the set of a worm's motions, the rhythm in a dancer's movement).
 At this point, we can sample the latent space through the VAE decoder to see the embedding.  
-Note that for this video, the frames are both rotated and resized proportionally
+
+Note that for this model, the frames are both rotated and resized proportionally
 to the long axis of the worm to reduce variances we don't want captured by the VAE.
 
 ![What is this](results/image21.gif)
