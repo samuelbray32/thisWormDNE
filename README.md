@@ -6,7 +6,7 @@ An example is shown below.
 
 We start with our video of interest. Here we see a set of videos of the stimulus response in a planarian flatworm
 
-![What is this](results/uv30s_response.avi)
+![What is this](results/uv30s_response.gif)
 
 It achieves this by first stacking adjacent frames of video to form  clips of dimension
 (height, width, channels, time points).  A Variational Autoencoder (VAE) is trained to
@@ -29,7 +29,7 @@ Each point in the sampled trajectory is then transformed into video using the sa
 Here we show an entirely simulated set of worm behaviors, with the generated latent dynamics to the rights and
 images on the left.
 
-![What is this](results/wormDNE.mp4)
+![What is this](results/wormDNE.gif)
 
 Feel free to play with your own videos.  If you make something cool, please share!
 
